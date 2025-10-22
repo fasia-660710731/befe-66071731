@@ -41,11 +41,11 @@ SELECT
 -- editor user >> editor role
 INSERT INTO user_roles (user_id, role_id)
 SELECT
-    (SELECT id FROM users WHERE username = 'editor'),
+    (SELECT id FROM users WHERE username = 'poohkan'),
     (SELECT id FROM roles WHERE name = 'editor');
 
 -- regular user >> user role
 INSERT INTO user_roles (user_id, role_id)
 SELECT
-    (SELECT id FROM users WHERE username = 'user'),
+    (SELECT id FROM users WHERE username = 'nuttachot'),
     (SELECT id FROM roles WHERE name = 'user');
